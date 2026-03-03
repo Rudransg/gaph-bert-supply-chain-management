@@ -16,6 +16,70 @@ The code builds a product-level supply graph with multiple relation types (plant
 - Heterogeneous GNN model (`HeteroGCN`) using `HeteroConv` with `SAGEConv` layers over the four relation types.[page:1]
 - Asymmetric loss function that penalizes under-forecasting more strongly via a tunable parameter `alpha`.[page:1]
 - Train/test temporal split with basic evaluation (MSE, MAE, R², RMSE) on the forecasting task.[page:1]
+- 
+## Sources
+
+This project builds on prior work in graph neural networks, temporal graph learning, and supply chain analytics.
+
+### Primary Dataset & Paper (CIOL Research Lab)
+
+- **SupplyGraph: A Benchmark Dataset for Supply Chain Planning using Graph Neural Networks**
+  Azmine Toushik Wasi, MD Shafikul Islam, and Adipto Raihan Akib (2024).
+  - arXiv: https://arxiv.org/abs/2401.15299
+  - GitHub: https://github.com/ciol-researchlab/SupplyGraph
+  - BibTeX:
+    ```bibtex
+    @misc{wasi2024supplygraph,
+      title={SupplyGraph: A Benchmark Dataset for Supply Chain Planning using Graph Neural Networks},
+      author={Azmine Toushik Wasi and MD Shafikul Islam and Adipto Raihan Akib},
+      year={2024},
+      eprint={2401.15299},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+    }
+    ```
+
+- **Graph Neural Networks in Supply Chain Analytics and Optimization: Concepts, Perspectives, Dataset and Benchmarks**
+  Azmine Toushik Wasi, MD Shafikul Islam, Adipto Raihan Akib, and Mahathir Mohammad Bappy (2024).
+  Shahjalal University of Science and Technology & Louisiana State University, Computational Intelligence and Operations Laboratory (CIOL).
+  - arXiv: https://arxiv.org/abs/2411.08550
+  - DOI: https://doi.org/10.48550/arXiv.2411.08550
+  - GitHub: https://github.com/ciol-researchlab/SCG
+  - BibTeX:
+    ```bibtex
+    @misc{wasi2024graphneuralnetworkssupply,
+      title={Graph Neural Networks in Supply Chain Analytics and Optimization: Concepts, Perspectives, Dataset and Benchmarks},
+      author={Azmine Toushik Wasi and MD Shafikul Islam and Adipto Raihan Akib and Mahathir Mohammad Bappy},
+      year={2024},
+      eprint={2411.08550},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2411.08550}
+    }
+    ```
+
+### GNN Backbone References
+
+- Kipf, T. N., & Welling, M. (2017). *Semi-Supervised Classification with Graph Convolutional Networks.* ICLR.
+  https://arxiv.org/abs/1609.02907
+
+- Hamilton, W. L., Ying, R., & Leskovec, J. (2017). *Inductive Representation Learning on Large Graphs (GraphSAGE).* NeurIPS.
+  https://arxiv.org/abs/1706.02216
+
+- Schlichtkrull, M., et al. (2018). *Modeling Relational Data with Graph Convolutional Networks (R-GCN / HeteroConv).* ESWC.
+  https://arxiv.org/abs/1703.06103
+
+- Wu, Z., et al. (2020). *Graph WaveNet for Deep Spatial-Temporal Graph Modeling.* IJCAI.
+  https://arxiv.org/abs/1906.00121
+
+- Rozemberczki, B., et al. (2021). *PyTorch Geometric Temporal: Spatiotemporal Signal Processing with Neural Machine Learning Models.* CIKM.
+  https://arxiv.org/abs/2104.07788
+
+### Libraries & Tools
+
+- PyTorch Geometric: https://pytorch-geometric.readthedocs.io/
+- PyTorch Geometric Temporal: https://pytorch-geometric-temporal.readthedocs.io/
+- scikit-learn: https://scikit-learn.org/
 
 ## Data Layout
 
