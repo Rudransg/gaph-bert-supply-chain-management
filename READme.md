@@ -188,4 +188,15 @@ where \(\alpha > 1\) scales the penalty when forecasts are below actuals.[page:1
 - matplotlib
 - scikit-learn[page:1]
 
+## Use Cases
+
+This project can be applied in a variety of real-world supply chain and demand planning scenarios:
+
+- **Demand Forecasting**: Predict future production quantities for individual products by leveraging both structural (graph) and temporal (time series) patterns in the supply network.
+- **Supply Chain Risk Analysis**: Identify products or nodes in the supply graph that are critical bottlenecks by analyzing graph connectivity across plant, storage location, product group, and subgroup relations.
+- **Inventory Optimization**: Use one-step-ahead forecasts with an asymmetric loss to reduce the risk of stock-outs, prioritizing avoidance of under-prediction in safety-stock calculations.
+- **Network-Aware Planning**: Incorporate relational context (e.g., shared plant or product group) into demand estimates, capturing ripple effects that traditional time-series models miss.
+- **Benchmarking GNN Architectures**: Serve as a testbed for evaluating heterogeneous GNN variants (e.g., `HeteroGCN`, `HGT`) on a real-world industrial supply chain dataset.
+- **Academic Research**: Supports experimentation with temporal graph learning, heterogeneous graph construction, and asymmetric loss functions in the context of operations research.
+
 Created by Rudransh Raizada and Yajur Tandon
